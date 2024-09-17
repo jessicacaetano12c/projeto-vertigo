@@ -13,6 +13,7 @@
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
+    --white: #FFF;
 }
 header {
     background-image: url(./imagens/bg-mobile.png);
@@ -48,7 +49,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-bottom: 1remsz;
+    margin-bottom: 1rem;
 }
 .input-box div {
     display: flex;
@@ -64,7 +65,7 @@ main {
 }
 
 .login input {
-    padding: 1rem 0.35rem;
+    padding: 1rem 0.75rem;
     border: 1px solid var(--gray-200);
     border-radius: 0.25rem;
     color: var(--gray-800);
@@ -88,4 +89,27 @@ main {
 
 .login a:hover {
     text-decoration: underline;
+}
+
+.login button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-block: 1rem;
+    width: 100%;
+    background-color: var(--purple);
+    border: none;
+    border-radius: 0.25rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.login > p {
+    color: var(--gray-600);
+}
+
+.login > p a {
+    font-weight: 700;
+    font-size: 1rem;
 }
